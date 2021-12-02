@@ -201,8 +201,10 @@ EAGENT
 Operations can be used in the `ACTION` context.</br>
 
 * `op` `arg1`, `arg2` - applies `op` to `arg1` and `arg2` and saves the result to `arg1` (`arg1` = `arg1` `op` `arg2`). `arg1` must be mutable.
+    * `ADD` `arg1`, `arg2` - add
     * `MULT` `arg1`, `arg2` - multiply
     * `SUBT` `arg1`, `arg2` - subtract
+    * `DIV` `arg1`, `arg2` - divide
 
 ```
 AGENT ...
