@@ -146,8 +146,19 @@ EAGENT
 ## Conditional instructions <a name = "conditional_instructions"></a>
 Conditional instructions can be used in the `ACTION` context.</br>
 * If `arg1` is `...` `arg2`
-    * `GT` `arg1`, `arg2` - greater than
-    * `LTE` `arg1`, `arg2` - less than or equal to
+    * `IGT` `arg1`, `arg2` - greater than
+    * `IGTE` `arg1`, `arg2` - greater than or equal to
+    * `ILT` `arg1`, `arg2` - less than
+    * `ILTE` `arg1`, `arg2` - less than or equal to
+    * `IE` `arg1`, `arg2` - equal to
+    * `INE` `arg1`, `arg2` - not equal to
+* While `arg1` is `...` `arg2`
+    * `WGT` `arg1`, `arg2` - greater than
+    * `WGTE` `arg1`, `arg2` - greater than or equal to
+    * `WLT` `arg1`, `arg2` - less than
+    * `WLTE` `arg1`, `arg2` - less than or equal to
+    * `WE` `arg1`, `arg2` - equal to
+    * `WNE` `arg1`, `arg2` - not equal to
 
 Every conditional instruction starts a local scope which can be treated as unnamed action so the same rules apply (or in other words - every action is just a named scope). They must be ended with `EBLOCK`.
 
